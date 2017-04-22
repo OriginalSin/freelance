@@ -1,0 +1,73 @@
+html, body, #map {
+	height: 100%;
+	margin: 0px;
+}
+#logo_part {
+    float: left;
+	padding-top: 22px;
+    padding-left: 22px;
+}
+#menu_part {
+    float: left;
+	padding-top: 44px;
+}
+.access ul li {
+    padding: 0 11px;
+    float: left;
+    list-style: none;
+}
+.content {
+	height: 100%;
+    width: 100%;
+	padding-top: 44px;
+	clear: both;
+	font-family: Arial;
+    color: #000;
+}
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    color: #000;
+    line-height: 1.5em;
+    margin: 0 0 20px 0;
+    font: small-caption;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#map {
+    width: 60%;
+	float: left;
+}
+
+
+.buy_sidebar {
+    margin-left: 7px;
+    padding-left: 26px;
+    float: left;
+	width: 30%;
+    border-left: 1px solid #bfbfbf;
+    margin-bottom: -50000px;
+    padding-bottom: 50000px;
+}
+.buy_sidebar #buy {
+	background: transparent;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+.buy_sidebar ul {
+	margin-left: 0;
+	padding: 0px;
+}
+.buy_sidebar ul li {
+    padding: 0 11px;
+    float: left;
+    list-style: none;
+}
+.buy_sidebar .widget-area a {
+    color: #e66207;
+}
+.buy_sidebar .widget-area a:hover {
+    text-decoration: none !important;
+}
+h2.widgettitle {
+}
