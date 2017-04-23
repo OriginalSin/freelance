@@ -123,3 +123,6 @@ html, body, #map, .contentMap {
 .vcard .metadata {
     padding: 2px;
 }
+.leaflet-popup-content img {
+    width: 140px;
+}

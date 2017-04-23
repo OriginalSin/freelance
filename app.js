@@ -33,11 +33,13 @@ fetch('sia.json').then(function(response) {
 
 		var geoJsonLayer = L.geoJson(featureCollection, {
 			onEachFeature: function (feature, layer) {
-				var props = feature.properties;
-				var html = '<strong>' + props.Name + '</strong>\
-					<br>' + props.Address + '\
-					<br>' + props['Phone Number'] + '\
-					<a href="' + props.Website + '">WEBSITE</a>';
+				var props = feature.properties,
+					img = props.Image ? '<img src="' + props.Image + '" />' : '',
+					html = img +
+						'<br><strong>' + props.Name + '</strong>\
+						<br>' + props.Address + '\
+						<br>' + props['Phone Number'] + '\
+						<a href="' + props.Website + '">WEBSITE</a>';
 				layer.bindPopup(html);
 			}
 		});
