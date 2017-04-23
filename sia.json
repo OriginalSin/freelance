@@ -16,6 +16,20 @@
  ],
  "rows": [
   [
+   0,
+   -75.108402,
+   "DRINK",
+   "Rehoboth Beach Country Club",
+   "221 West Side Dr\u003cbr /\u003eRehoboth Beach, DE",
+   "https://www.rehobothbeachcc.com/",
+   "http://siascotch.com/wp-content/uploads/2016/10/bar_rehobothbeachcountryclub_rehoboth_sia_scotch.png",
+   "19971",
+   "(302) 227-3811",
+   "YES",
+   "You can now order a delicious SIA Scotch cocktail at Rehoboth Beach Country Club, a premier private club on the Delmarva Peninsula!",
+   "6"
+  ],
+  [
    37.7896013,
    -122.4058291,
    "STORE",
@@ -82,7 +96,7 @@
    "20002",
    "(202) 543-9300",
    "YES",
-   "Venerable, family-run operation offering a vast array of wine, spirits & beer, plus weekly tastings.  \u003cstrong\u003e\u003ca href=\"http://cellar.com/spirit_details/147510/sia-blended-scotch\"\u003e Now selling SIA Scotch online.\u003c/a\u003e",
+   "Venerable, family-run operation offering a vast array of wine, spirits & beer, plus weekly tastings. <a href=\"http://cellar.com/spirit_details/147510/sia-blended-scotch\"> Now selling SIA Scotch online.</a>",
    "10"
   ],
   [
@@ -96,7 +110,7 @@
    "33173",
    "(305) 271-8492",
    "YES",
-   "Sunset Corners has been recognized by the Miami New Times as the \"Best Liquor Store in Miami and by Marketwatch Magazine as Retailer of the Year. \u003cstrong\u003e\u003ca href=\"http://www.sunsetcorners.com/browse.cfm/sia-blended-scotch-750ml/4,9699.html\"\u003e ORDER SIA SCOTCH ONLINE\u003c/a\u003e \u003c/strong\u003e",
+   "Sunset Corners has been recognized by the Miami New Times as the \"Best Liquor Store in Miami and by Marketwatch Magazine as Retailer of the Year. <a href=\"http://www.sunsetcorners.com/browse.cfm/sia-blended-scotch-750ml/4,9699.html\"> ORDER SIA SCOTCH ONLINE</a>",
    "10"
   ],
   [
@@ -965,20 +979,6 @@
    "(202) 362-9463",
    "YES",
    "Weygandt Wines offers wine tastings and friendly, knowledgeable service & great prices. Now carrying SIA Scotch Whisky",
-   "6"
-  ],
-  [
-   "221 West Side Dr\nRehoboth Beach, DE 19971",
-   -75.108402,
-   "DRINK",
-   "Rehoboth Beach Country Club",
-   "221 West Side Dr\u003cbr /\u003eRehoboth Beach, DE",
-   "https://www.rehobothbeachcc.com/",
-   "http://siascotch.com/wp-content/uploads/2016/10/bar_rehobothbeachcountryclub_rehoboth_sia_scotch.png",
-   "19971",
-   "(302) 227-3811",
-   "YES",
-   "You can now order a delicious SIA Scotch cocktail at Rehoboth Beach Country Club, a premier private club on the Delmarva Peninsula!",
    "6"
   ],
   [
