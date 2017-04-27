@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Leaflet Layers Control Example</title>
+	<meta charset="utf-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+	<script src="neighbourhoods.js" type="text/javascript"></script>
+	<style>
+		html, body, #map {
+			height: 100%;
+			margin: 0px;
+		}
+	</style>
+</head>
+<body>
+	<div id="map"></div>
+
+	<script>
+
+		var map = L.map('map', {attributionControl: false}).setView([43.727445, -79.414673], 11);
+
+		L.tileLayer('https://tilessputnik.ru/{z}/{x}/{y}.png', {
+		}).addTo(map);
+
+		var features = L.geoJson(neighbourhoods, {
+			style: function(feature) {
+				var props = feature.properties,
+					color = 'black';
+					fillColor = props.fillColor || 'rgb('+[25*props.HOODNUM, 25 * Math.random(), 55 * Math.random()].join(',')+')';
+
+				return {
+					color: color,
+					fillOpacity: 0.6,
+					fillColor: fillColor
+				};
+			}
+		});
+		features
+			.on('click', function(ev) {
+				var props = ev.layer.feature.properties,
+					html = props.desc || (props.FULLHOOD + '<br>' + props.HOOD);
+				map.openPopup(html, ev.latlng, {maxWidth: 600});
+			})
+			.addTo(map);
+	</script>
+</body>
+</html>
