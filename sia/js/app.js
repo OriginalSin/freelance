@@ -48,6 +48,7 @@ fetch('data/sia6.json').then(function(response) {
 		map.addLayer(markers);
 		// map.fitBounds(markers.getBounds());
 		map.on('moveend', utils.setFilter);
+		utils.setFilter();
 	});
 
 var utils = {
