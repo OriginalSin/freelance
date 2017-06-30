@@ -182,7 +182,9 @@ html, body, #map, .contentMap {
     background-color: #f0f0f0;
     line-height: 33px;
 }
-
+.contentMap .closetome {
+    width: 96px ! important;
+}
 a:link {
     text-decoration: none;
 }

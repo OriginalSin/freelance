@@ -47,12 +47,13 @@ fetch('data/sia6.json').then(function(response) {
 
 		map.addLayer(markers);
 		// map.fitBounds(markers.getBounds());
-		map.on('moveend', utils.setFilter);
+		map
+			.on('moveend', utils.setFilter);
 		utils.setFilter();
 	});
 
 var utils = {
-	buttons: ['zipcode', 'sButton', 'searchBARS', 'searchALL', 'searchSTORE'],
+	buttons: ['zipcode', 'sButton', 'searchBARS', 'searchALL', 'searchSTORE', 'closetome'],
 	getButtonType: function(button) {
 		for (var i = 0, len = utils.buttons.length; i < len; i++) {
 			var type = utils.buttons[i];
@@ -68,6 +69,9 @@ var utils = {
 				fname = type === name ? 'addClass' : 'removeClass';
 			L.DomUtil[fname](document.getElementsByClassName(name)[0], 'current');
 		}
+	},
+	locationfound: function(ev) {
+			console.log('locationfound', ev);
 	},
 	setFilter: function(ev) {
 		var button = ev ? ev.target : null,
@@ -88,6 +92,8 @@ var utils = {
 					return;
 				}
 			}
+		} else if (type === 'closetome') {
+			map.locate({setView: true});
 		} else if (type.indexOf('search') !== -1) {
 			utils.setCurrentType(type);
 			flayers.forEach(function(it) {
