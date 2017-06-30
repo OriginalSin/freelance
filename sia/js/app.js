@@ -1,4 +1,4 @@
-var map = L.map('map').setView([20, -17.59], 2);
+var map = L.map('map').setView([33.17434155100208, -98.0419921875], 4);
 L.Icon.Default.imagePath = './';
 var iconUrl = L.Icon.Default.imagePath + 'sia.jpg';
 L.Marker = L.Marker.extend({
@@ -46,7 +46,7 @@ fetch('data/sia6.json').then(function(response) {
 		markers.addLayer(geoJsonLayer);
 
 		map.addLayer(markers);
-		map.fitBounds(markers.getBounds());
+		// map.fitBounds(markers.getBounds());
 		map.on('moveend', utils.setFilter);
 	});
 
