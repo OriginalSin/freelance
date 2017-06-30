@@ -48,21 +48,6 @@ fetch('data/sia6.json').then(function(response) {
 		map.addLayer(markers);
 		map.fitBounds(markers.getBounds());
 		map.on('moveend', utils.setFilter);
-		// map.on('moveend', function(ev) {
-			// var count = 0,
-				// bbox = map.getBounds();
-			// geoJsonLayer.getLayers().forEach(function(it) {
-				// var flag = bbox.contains(it.getLatLng()),
-					// node = it.feature.dom;
-				// if (flag) {
-					// count++;
-					// L.DomUtil.removeClass(node, 'gmx-hidden');
-				// } else {
-					// L.DomUtil.addClass(node, 'gmx-hidden');
-				// }
-			// });
-			// viewItemsCount.innerHTML = count;
-		// });
 	});
 
 var utils = {
@@ -98,6 +83,7 @@ var utils = {
 					pv = String(it.feature.properties[fname]);
 				if (pv.indexOf(val) !== -1) {
 					map.setView(it.getLatLng(), 17);
+					it.openPopup();
 					return;
 				}
 			}
@@ -123,7 +109,7 @@ var utils = {
 			});
 			viewItemsCount.innerHTML = count;
 		}
-		console.log(type)
+		// console.log(type)
 	},
 	getFeatureCollection: function(json) {
 		// var columns = json.columns;
